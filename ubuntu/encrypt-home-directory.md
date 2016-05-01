@@ -2,7 +2,7 @@
 
 (Ubuntu 14.04)
 
-If you want to encrypt a home directory for existing users:
+If you want to encrypt a home directory for existing users run:
 
 ```bash
 sudo apt-get install ecryptfs-utils cryptsetup
@@ -36,7 +36,7 @@ Login as an admin user and rename or remove the current `/home/[username]` direc
 
 Then rename the `/home/[username].[random_id]` to `/home/[username]`.
 
-You also need to remove the directory in `/home/.ecryptfs/[username]`.
+You also need to remove the directory `/home/.ecryptfs/[username]`.
 
 After a restart you should be able to login to your unencrypted account.
 
